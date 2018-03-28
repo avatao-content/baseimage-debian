@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:buster
 
 ENV DEBIAN_FRONTEND=noninteractive \
     AVATAO_USER=user
