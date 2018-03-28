@@ -19,7 +19,7 @@ RUN dpkg --add-architecture i386 \
         libc6-dev \
         libc6-dev-i386 \
         libffi-dev \
-        libpam-script \
+#       libpam-script \
         libssl-dev \
         locales \
         man-db \
