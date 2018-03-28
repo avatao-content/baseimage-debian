@@ -58,6 +58,7 @@ RUN adduser --disabled-password ${AVATAO_USER} \
 COPY . /
 
 RUN chown -R ${AVATAO_USER}: /home/${AVATAO_USER} \
+    && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen \
     && locale-gen en_US.UTF-8
 
 ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
