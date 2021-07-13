@@ -5,7 +5,6 @@ ENV DEBIAN_FRONTEND=noninteractive \
 
 RUN dpkg --add-architecture i386 \
     && apt-get -qy update \
-    && apt-get -qy dist-upgrade \
     && apt-get -qy install \
         autoconf \
         automake \
