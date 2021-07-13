@@ -26,6 +26,7 @@ RUN dpkg --add-architecture i386 \
         netcat \
         openssh-server \
         psmisc \
+        python2.7-dev \
         python3-dev \
         python3-flask \
         python3-pip \
