@@ -37,7 +37,7 @@ RUN dpkg --add-architecture i386 \
         python3-pip \
         screen \
         socat \
-        sqlite \
+        sqlite3 \
         subversion \
         sudo \
         tmux \
