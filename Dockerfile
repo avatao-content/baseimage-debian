@@ -3,7 +3,7 @@ FROM debian:bullseye
 ENV DEBIAN_FRONTEND=noninteractive \
     AVATAO_USER=user
 
-RUN dpkg --add-architecture i386 \
+RUN dpkg --add-architecture arm64 \
     && apt-get -qy update \
     && apt-get -qy install \
         autoconf \
@@ -12,11 +12,11 @@ RUN dpkg --add-architecture i386 \
         build-essential \
         curl \
         flex \
-        g++-multilib \
-        gcc-multilib \
+    #   g++-multilib \
+    #   gcc-multilib \
         git \
         libc6-dev \
-        libc6-dev-i386 \
+        libc6-dev-arm64-cross \
         libffi-dev \
         libpam-script \
         libssl-dev \
